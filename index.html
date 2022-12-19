@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- Link for Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Additional CSS Link -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-5" href="#">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-section">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio-section">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service-section">Service</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Design
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Design 1</a></li>
+                                <li><a class="dropdown-item" href="#">Design 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-us-section">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="register-button" data-bs-toggle="modal" data-bs-target="#registerModal">
+                        <button class="btn btn-success">
+                            Register
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End of Header Section -->
+
+    <!-- Hero Section -->
+    <div id="hero" class="home">
+        <div class="container">
+            <div class="hero-content d-flex">
+                <h4 class="text-uppercase fw-bold">I'm
+                </h4>
+                <p class="fw-500">Developer | Freelancer | Photographer</p>
+
+                <ul class="list-unstyled list-social">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+
+                <div class="col-lg-4 mt-5 lh-lg fw-light text-justify bio-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur beatae adipisci ipsa odit
+                    incidunt! Voluptas modi quia obcaecati, hic pariatur fuga ratione. Illum modi inventore eaque
+                    adipisci aliquam voluptates!
+                </div>
+            </div>
+
+            <!-- Register Modal Section -->
+            <div class="register-modal">
+                <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <!-- use class 'modal-dialog-centered' to align the modal in center -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="registerModalLabel">Register</h1>
+                                <i class="bi bi-x fs-3" id="modal-close" data-bs-dismiss="modal" aria-label="Close"></i>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="mb-2 text-dark">FullName <span
+                                                class="text-danger">*</span></label>
+                                        <div class="input-group flex-nowrap">
+                                            <span class="input-group-text">
+                                                <i class="bi bi-person-check"></i>
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Enter full name"
+                                                id="fullname">
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <label class="mb-2 text-dark">Email <span class="text-danger">*</span></label>
+                                        <div class="input-group flex-nowrap">
+                                            <span class="input-group-text">
+                                                <i class="bi bi-envelope"></i>
+                                            </span>
+                                            <input type="email" class="form-control" placeholder="Enter email"
+                                                id="email">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Hero Section -->
+
+    <main id="main">
+        <!-- About Section -->
+        <div id="about-section" class="about-section mb-3 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <img src="./assets/images/about-us.png" alt="" class="responsive-image w-100">
+                    </div>
+                    <div class="col-lg-6 col-md-6 my-auto mx-auto">
+                        <h4 class="heading mb-4 text-uppercase">
+                            About
+                        </h4>
+                        <p class="description fw-light text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat similique ad recusandae
+                            numquam repudiandae porro dicta labore autem! Nesciunt fugiat molestiae aliquam provident
+                            ratione expedita odio quod vel voluptatum eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat similique ad recusandae
+                            numquam repudiandae porro dicta labore autem! Nesciunt fugiat molestiae aliquam provident
+                            ratione expedita odio quod vel voluptatum eos.
+                        </p>
+                        <a href="#"><button class="btn readmore-button">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of About Section -->
+
+        <!-- Service Section -->
+        <div id="service-section" class="service-section py-5">
+            <div class="container">
+                <div class="row">
+                    <h4 class="heading mt-5 mb-4 text-uppercase">
+                        Services
+                    </h4>
+
+                    <div class="col-md-3 col-sm-6 col-12 mb-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="w-25" src="./assets/images/developer.png" alt="">
+                                <h6 class="subtitle-text mb-2">Developer</h6>
+                                <hr class="text-dark">
+                                <p class="text-dark text-justify">Some quick example text to build on the card title and
+                                    make up the
+                                    bulk of the card's content.</p>
+                                <a href="#"><button class="btn btn-sm btn-success">Read More</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-12 mb-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="w-25" src="./assets/images/freelancer.png" alt="">
+                                <h6 class="subtitle-text mb-2">Freelancer</h6>
+                                <hr class="text-dark">
+                                <p class="text-dark text-justify">Some quick example text to build on the card title and
+                                    make up the
+                                    bulk of the card's content.</p>
+                                <a href="#"><button class="btn btn-sm btn-success">Read More</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-12 mb-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="w-25" src="./assets/images/designer.png" alt="">
+                                <h6 class="subtitle-text mb-2">Designer</h6>
+                                <hr class="text-dark">
+                                <p class="text-dark text-justify">Some quick example text to build on the card title and
+                                    make up the
+                                    bulk of the card's content.</p>
+                                <a href="#"><button class="btn btn-sm btn-success">Read More</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-6 col-12 mb-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="w-25" src="./assets/images/photographer.png" alt="">
+                                <h6 class="subtitle-text mb-2">Photographer</h6>
+                                <hr class="text-dark">
+                                <p class="text-dark text-justify">Some quick example text to build on the card title and
+                                    make up the
+                                    bulk of the card's content.</p>
+                                <a href="#"><button class="btn btn-sm btn-success">Read More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div id="call-to-action" class="container-fluid dark-overlay mt-5 p-5">
+            <div class="row">
+                <div class="col-lg-8 col-md-6 col-sm-6 col-12">
+                    <h3>Its a Call To Action</h3>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <button class="btn btn-success float-end text-uppercase">Call Us!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Section -->
+        <div id="portfolio-section" class="portfolio-section py-5">
+            <div class="container">
+                <div id="portfolio-section" class="row">
+                    <h4 class="heading mt-5 mb-4 text-uppercase">
+                        Portfolio
+                    </h4>
+                    <div class="row mb-3">
+                        <a href="./assets/images/image-1.jpg" data-toggle="lightbox" data-gallery="example-gallery"
+                            class="col-sm-3">
+                            <img src="./assets/images/image-1.jpg" class="img-fluid">
+                        </a>
+                        <a href="./assets/images/image-2.jpg" data-toggle="lightbox" data-gallery="example-gallery"
+                            class="col-sm-3">
+                            <img src="./assets/images/image-2.jpg" class="img-fluid">
+                        </a>
+                        <a href="./assets/images/image-3.jpg" data-toggle="lightbox" data-gallery="example-gallery"
+                            class="col-sm-3">
+                            <img src="./assets/images/image-3.jpg" class="img-fluid">
+                        </a>
+                        <a href="./assets/images/image-7.jpg" data-toggle="lightbox" data-gallery="example-gallery"
+                            class="col-sm-3">
+                            <img src="./assets/images/image-7.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="./assets/images/image-4.jpg" data-toggle="lightbox" data-gallery="example-gallery"
+                            class="col-sm-3">
+                            <img src="./assets/images/image-4.jpg" class="img-fluid">
+                        </a>
+                        <a href="./assets/images/image-5.jpg" data-toggle="lightbox" data-gallery="example-gallery"
+                            class="col-sm-3">
+                            <img src="./assets/images/image-5.jpg" class="img-fluid">
+                        </a>
+                        <a href="./assets/images/image-6.jpg" data-toggle="lightbox" data-gallery="example-gallery"
+                            class="col-sm-3">
+                            <img src="./assets/images/image-6.jpg" class="img-fluid">
+                        </a>
+                        <a href="./assets/images/image-5.jpg" data-toggle="lightbox" data-gallery="example-gallery"
+                            class="col-sm-3">
+                            <img src="./assets/images/image-5.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div id="contact-us-section" class="contact-us-section mt-5 p-5">
+            <div class="container">
+                <div class="row">
+                    <h4 class="heading mt-5 mb-4 text-uppercase">
+                        Contact Us
+                    </h4>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 my-auto">
+                        <h5 class="fw-bold">Get In Touch</h5>
+                        <div class="details" style="line-height: 3;">
+                            <span class="fw-semibold">23 Main Street</span> <br>
+                            <span class="fw-semibold">ABC, Nepal</span> <br>
+                            <span class="fw-semibold">+977-9865000000</span> <br>
+                            <span class="fw-semibold">example@example.com</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-sm-6 col-12">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" placeholder="Enter your fullname" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="text" placeholder="Enter your email" class="form-control">
+                            </div>
+                            <div class="col-md-12  mb-3">
+                                <input type="text" placeholder="Enter your subject" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea name="" id="" cols="30" rows="5" placeholder="Enter message"
+                                    class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <hr>
+    <!-- Footer Section -->
+    <footer id="footer" class="footer text-center p-3">
+        <div class="container-fluid">
+            <div class="row">
+                <ul class="list-unstyled list-social">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+
+                <p>@Copyright 2022-2023. All Right Reserved</p>
+                <p>Designed by: ABC</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link for bootstrap js -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Link for gallery lightbox  -->
+    <script src="./assets/js/index.bundle.min.js"></script>
+
+
+</body>
+
+</html>
